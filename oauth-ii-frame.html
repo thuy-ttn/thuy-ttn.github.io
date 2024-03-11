@@ -1,0 +1,22 @@
+<body onload="document.getElementById('csrf').submit()">
+    <form class="new_user" id="csrf" action="http://authorization-ptl-0a9f65ee-9749d9fe.libcurl.so/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="fo2F5ZUTC1nAGxbxxss19HL1bm2SPKpE2Edek56Ygh/AD29XyIWT3OqwzHjbw36SheYlDeERC1sVguz49u8lSg==">
+  <div class="field">
+    <label for="user_email">Email</label><br>
+    <input autofocus="autofocus" autocomplete="email" type="email" value="test@abc.com" name="user[email]" id="user_email">
+  </div>
+
+  <div class="field">
+    <label for="user_password">Password</label><br>
+    <input autocomplete="current-password" type="password" name="user[password]" id="user_password" value="pass123">
+  </div>
+
+    <div class="field">
+      <input name="user[remember_me]" type="hidden" value="0"><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+      <label for="user_remember_me">Remember me</label>
+    </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Log in" data-disable-with="Log in">
+  </div>
+</form>
+</body>
