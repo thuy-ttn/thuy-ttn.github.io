@@ -7,13 +7,9 @@ fetch(authUrl, {
     credentials: 'include', 
     mode: 'no-cors'
 })
-.then(response => {
-    if (!response.ok) {
-        throw new Error('Network response was not ok');
-    }
-})
+.then(() => {})
 .catch(err => {
-    console.error('Fetch Error:', err);
+    console.log('Fetch Error:', err);
 });
 
     </script>
